@@ -1,0 +1,8 @@
+d(end to end) = N * (L/R) - end to end delay for single packet
+Generalize for P packets over N links
+The total delay will be given by the time it takes for the source to start sending the last packet plus the time it takes for the last packet
+to propagate.
+The last packet will be reached after (or the earlier packets will have been sent) (P-1)*(L/R) - (It takes 0*(L/R) to start sending 1st packet,
+1*(L/R) to start sending 2nd packet, and so on...)
+The last packet then follows the first formula for its delay:N*(L/R).
+The sum of these is N*(L/R)+(P-1)(L/R) = (N+P-1)*(L/R)
