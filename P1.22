@@ -1,0 +1,11 @@
+Packet loss probability on each link = p
+p for each link is independent from other links
+What is the probability that a packet will be successfully received by the receiver?
+There are N links between the server and the receiver, each with probability p of failure, and thus probability 1-p of success.
+A successful transfer will occur when all links are successful with their respective transfers, with a probability given by
+(1-p) \* (1-p) \* ... \* (1-p) where the number of (1-p) terms is given by the number of links (N)
+so the probability of successful reception is given by (1-p)^n 
+Average amount of retransmissions in order for the receiver to successfully receive the packet?
+A retransmission will occur every time that there is an error with sending a packet, no matter which link it happens on
+This means that the probability a retransmission will be needed is given by N \* p, or Np
+The expected number of tranmissions until a success will be 1/(1-Np)
