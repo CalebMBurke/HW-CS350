@@ -1,0 +1,9 @@
+N - average number of packets in the buffer plus packets being transmitted
+a - the rate of packets arriving at the link
+d - the average total delay (queueing plus transmission delay) experienced by a packet
+Little's Formula = N = a \* d
+if N = 10 packets, transmission rate is 100 packets/sec, average queueing delay is 10 msec
+transmission delay = 1/100 = 0.01 seconds per packet
+Then d = 10 msec + 10 msec = 20 msec
+and then N = a \* d gives 10 packets = a \* 20 msec
+so a = 10 packets / 0.02 sec = 500 packets/sec
