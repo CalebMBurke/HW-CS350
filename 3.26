@@ -1,0 +1,10 @@
+Enormous number L bytes, MSS of 1460 bytes.
+Max L to not exhaust segment numbers.
+4 bytes means 2^32 = 4294967296 different numbers
+4294967296 * 1460 = 6270652252160
+
+66 more bytes per segment, 250 mbps link.
+Segments are 1526 bytes each, 1526 * 8 = 12208 bits
+6270652252160 + (4294967296 * 66) = 6554120093696
+6554120093696 / 250000000 = 26216.480374784 seconds
+7.28 hours (7 hr 17 minutes
