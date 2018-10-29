@@ -1,0 +1,9 @@
+Window size for 95% utilization
+packet size - 1500 bytes
+U = (L/R)/(RTT+L/R) 
+L = 12000 bits
+R = 1 Gbps = 1000000000 bps
+RTT = 30 ms
+0.95 = (12000 x X) / 1000000000 | X = 6.597
+
+Window size should be 7
